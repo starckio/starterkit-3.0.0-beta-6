@@ -1,0 +1,97 @@
+title: Site
+
+tabs:
+
+  # Pages Tab
+  pages:
+    label:
+      en: Pages
+      de: Seiten
+    icon: page
+    sections:
+      kitchensink:
+        headline: Examples
+        type: pages
+        status: listed
+        item:
+          image: false
+          info: "{{ page.template }}"
+      playground:
+        headline: Playground
+        type: pages
+        status: all
+        templates:
+          - default
+          - form
+          - sandbox
+
+  # Footer Tab
+  footer:
+    label: Footer
+    icon: twitter
+    fields:
+      copyright:
+        label: Copyright
+        type: text
+        before: ©
+      twitter:
+        label: Twitter Account
+        type: text
+        icon: twitter
+        width: 1/2
+        before: "@"
+      instagram:
+        label: Instagram Account
+        type: text
+        icon: instagram
+        width: 1/2
+
+  # Seo Tab
+  seo:
+    label: SEO
+    icon: search
+    columns:
+      - width: 2/3
+        sections:
+          seoContent:
+            type: fields
+            fields:
+              metaTitle:
+                label: Meta Title
+                type: text
+                required: true
+              metaDescription:
+                label: Meta Description
+                type: textarea
+                buttons: false
+              metaFiles:
+                label: Meta Files
+                type: files
+
+      - width: 1/3
+        sections:
+          seoImages:
+            type: files
+            headline: Seo Images
+            min: 1
+
+  # Taxonomy Tab
+  taxonomy:
+    label: Taxonomy
+    icon: tag
+    sections:
+      tags:
+        type: fields
+        fields:
+          tags:
+            label: Tags
+            type: structure
+            fields:
+              name:
+                label: Tag
+                type: text
+                width: 1/2
+              value:
+                label: Value
+                type: text
+                width: 1/2

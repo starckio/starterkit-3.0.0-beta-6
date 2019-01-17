@@ -1,0 +1,4 @@
+headline: Events
+sortBy: from asc
+template: event
+info: "{{ page.from.toDate('d.m.Y') }} - {{ page.to.toDate('d.m.Y') }} / {{ page.location }}"

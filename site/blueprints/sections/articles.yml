@@ -1,0 +1,5 @@
+sortBy: date desc
+templates: article
+info: "{{ page.date('d.m.Y') }}"
+image:
+  cover: true

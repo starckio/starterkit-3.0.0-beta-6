@@ -1,0 +1,7 @@
+title: Editor
+description: Editors edit stuff
+extends: users/default
+
+permissions:
+  pages:
+    delete: false
